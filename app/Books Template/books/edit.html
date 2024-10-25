@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitobni Tahrirlash</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <h2 class="mb-4">Kitobni Tahrirlash
+            <a class="text-danger" href="./index.html" style="margin-left: 10px;">Ortga</a>
+        </h2>
+
+        <form method="POST">
+            <!-- Kitobni ID'sini yashirin holda qo'shish -->
+            <input type="hidden" id="book_id" name="book_id" value="<!-- Kitob ID dinamik ravishda qo'shiladi -->">
+
+            <div class="mb-3">
+                <label for="title" class="form-label">Kitob Nomi</label>
+                <input type="text" class="form-control" id="title" name="title" placeholder="Kitob nomini kiriting"
+                    value="<!-- Kitob nomi dinamik ravishda qo'shiladi -->" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="description" class="form-label">Kitob Tavsifi</label>
+                <textarea class="form-control" id="description" name="description" rows="3"
+                    placeholder="Kitob tavsifini kiriting"
+                    required><!-- Kitob tavsifi dinamik ravishda qo'shiladi --></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="authors" class="form-label">Mualliflarni Tanlang</label>
+                <select class="form-select" id="authors" name="authors[]" multiple>
+                    <!-- Mualliflar dropdown menyusi dinamik ravishda qo'shiladi -->
+                    <option value="1" selected>Azizbek</option>
+                    <option value="2">Dilshod Akbarov</option>
+                    <!-- Bu yerda tanlangan va tanlanmagan mualliflar dinamik ravishda qo'shiladi -->
+                </select>
+                <div class="form-text">Bir nechta muallif tanlash uchun <strong>CTRL</strong> tugmasini bosib turib
+                    tanlang.</div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Tahrirlash</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

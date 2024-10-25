@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mualliflar CRUD</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <a href="../index.html" style="font-size: 25px;">Ortga</a>
+
+        <h2 class="mb-4">Mualliflar Ro'yxati</h2>
+
+        <a href="create.html" class="btn btn-success mb-3">Yangi Muallif Qo'shish</a>
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Muallif Nomi</th>
+                    <th>Email</th>
+                    <th>Amallar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dinamik mualliflar ro'yxati -->
+                <tr>
+                    <td>Azizbek</td>
+                    <td>aziz@example.com</td>
+                    <td>
+                        <a href="show.html" class="btn btn-info btn-sm">Ko'rish</a>
+                        <a href="edit.html" class="btn btn-warning btn-sm">Tahrirlash</a>
+                        <button type="submit" class="btn btn-danger btn-sm">O'chirish</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
